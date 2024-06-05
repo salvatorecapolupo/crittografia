@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CAESER</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+        
+        
+    </head>
+    <body>
+        
+<div class="container">
+
+<header>
+   <h1><u><a href="caeserin.html">CAESER</a></u></h1>
+</header>
+    
+    <table style="width:100%">
+  <tr>
+    <th>ENCRYPTED MESSAGE</th>
+    <th>CIPHER</th> 
+  </tr>
+        
+  <tr>
+    <td><script src="caeserShift.js"></script></td>
+    <td><img src="caeser.png" alt="cipher" width="500" height="377"></td>
+  </tr>
+ 
+</table>
+
+<footer>created by hallomärz</footer>
+
+</div>
+        
+                
+        
+        <h2>PUT YOUR DECRYPTED CODE HERE:</h2>
+<h3>Hint: all letters are lowercase</h3>
+<input id="theirguess">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="guessoutput"></p>
+  <script>function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="theirguess"
+    x = document.getElementById("theirguess").value;
+
+    // does it match the phrase?
+    if (x == 'harder than you think') {
+        alert("Good job!");
+        window.location = 'play.html'
+        text = "Good job!";
+    } else {
+        text = "Try again!";
+    }
+    document.getElementById("guessoutput").innerHTML = text;
+}</script>      
+
+        <h3>LOOK AT THE ENCRYPTED MESSAGE AND TRY TO SOLVE IT! WHEN YOU THINK YOU HAVE SOLVED IT, PLEASE TYPE YOUR CODE INTO WHERE THE PAGE SAYS AND CLICK THE SUBMIT BUTTON.</h3>
+        
+        
+        <center>
+        <a href="index.html"><button type="button">GO BACK TO HOME</button></a>
+        
+       </center>
+        
+        
+       
+           
+        
+           
+        
+        
+        
+        
+       
+        
+        
+        
+        
+    </body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
